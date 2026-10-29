@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hamburgueria do Zé</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Liga o arquivo CSS (estilização) a esta página -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>🍔 Hamburgueria do Zé</h1>
+    <div class="subtitulo">Sabor artesanal desde 2020</div>
+  </header>
+
+  <main>
+
+    <section class="card">
+      <h2>Quem somos</h2>
+
+      <p>Bem-vindo à Hamburgueria do Zé! Aqui os hambúrgueres são feitos na hora, com carne suculenta e ingredientes frescos.</p>
+      <p>Venha conhecer o nosso cardápio e matar a sua fome com muito sabor.</p>
+
+      <img alt="Hambúrguer sendo grelhado"
+           src="especial do seu Zé.webp">
+      <div class="credito">Foto: Wikimedia Commons</div>
+    </section>
+
+    <section class="card">
+      <h2>Nosso cardápio</h2>
+
+      <ul>
+        <li>X-Burger <span class="preco">R$ 18,00</span></li>
+        <li>X-Bacon <span class="preco">R$ 22,00</span></li>
+        <li>X-Salada <span class="preco">R$ 20,00</span></li>
+        <li>Batata frita <span class="preco">R$ 12,00</span></li>
+      </ul>
+    </section>
+
+    <section class="card centro">
+      <h2>Promoção do dia</h2>
+
+      <!-- Ao clicar no botão, o onclick chama a função do arquivo script.js -->
+      <button onclick="mostrarPromocao()">Ver promoção</button>
+
+      <!-- O JavaScript escreve a mensagem dentro desta caixa -->
+      <div id="mensagem"></div>
+    </section>
+
+  </main>
+
+  <footer>© 2026 Hamburgueria do Zé - Todos os direitos reservados</footer>
+
+  <!-- Liga o arquivo JavaScript (interatividade) a esta página -->
+  <script src="script.js"></script>
+
+</body>
+</html>

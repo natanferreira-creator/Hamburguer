@@ -1,0 +1,153 @@
+/* ===================== CSS ===================== */
+
+/* Variáveis: guardam as cores para usar várias vezes com var() */
+:root {
+  --vermelho: #e63946;
+  --laranja: #ff9f1c;
+  --escuro: #1d1d1f;
+  --claro: #fff8ef;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Muda a cor de fundo da página e a fonte */
+body {
+  margin: 0;
+  background-color: var(--claro);
+  color: var(--escuro);
+  font-family: 'Poppins', Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Faixa do topo com fundo em degradê (linear-gradient mistura duas cores) */
+header {
+  background: linear-gradient(135deg, var(--vermelho), var(--laranja));
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 0 0 40px 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Muda cor e tamanho do título */
+h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.subtitulo {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Cartão branco com cantos arredondados (border-radius) e sombra (box-shadow) */
+.card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Muda cor e tamanho dos parágrafos */
+p {
+  color: #444;
+  font-size: 17px;
+}
+
+h2 {
+  color: var(--vermelho);
+  font-size: 28px;
+  margin-top: 0;
+}
+
+/* Imagem: object-fit corta a foto sem deformar */
+img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.credito {
+  font-size: 12px;
+  color: #888;
+  text-align: right;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* display: flex coloca o nome do lanche de um lado e o preço do outro */
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 2px dashed #eadfce;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+.preco {
+  color: var(--vermelho);
+}
+
+/* Personaliza a aparência do botão */
+button {
+  background: linear-gradient(135deg, var(--vermelho), var(--laranja));
+  color: white;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+/* :hover = quando o mouse passa por cima, o botão cresce um pouco */
+button:hover {
+  transform: scale(1.07);
+}
+
+.centro {
+  text-align: center;
+}
+
+/* A caixa da promoção começa escondida (display: none).
+   O JavaScript mostra quando o botão é clicado. */
+#mensagem {
+  display: none;
+  margin-top: 20px;
+  padding: 18px;
+  background-color: #fff3cd;
+  border: 2px solid var(--laranja);
+  border-radius: 14px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #888;
+  font-size: 14px;
+}
